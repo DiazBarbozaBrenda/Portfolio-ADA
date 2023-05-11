@@ -8,84 +8,140 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/cf41634d4e.js" crossorigin="anonymous"></script>
     <title>Brenda Díaz Barboza</title>
 </head>
 <body>
     <header>
         <nav>
             <ul>
-                <li><a href="HOLA">HOLA</a></li>
-                <li><a href="CONOCIMIENTOS">CONOCIMIENTOS</a></li>
-                <li><a href="PROYECTOS">PROYECTOS</a></li>
-                <li class="contacto-header"><a href="CONTACTO">CONTACTO</a></li>
-                <!-- contacto puede ser un button? -->
+                <li><a href="">HOLA</a></li>
+                <li><a href="">CONOCIMIENTOS</a></li>
+                <li><a href="">PROYECTOS</a></li>
+                <li><a href="">CONTACTO</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <div class="contenedor-hola">
-            <p>
-                ¡Hola! Soy
-                <span class="mi-nombre">Brenda Díaz Barboza</span>
-                <span>Estudiante, coleccionista de cartones y fanática de BTS</span>
+        <section id="contenedor-presentacion">
+            <div class="presentacion-info">
+                <span>
+                    ¡Hola! Soy
+                </span>
+                <h2 class="mi-nombre">
+                    Brenda Díaz Barboza
+                </h2>
+                <p>
+                    Estudiante, coleccionista de cartones y fanática de BTS
+                </p>
                 <button>LO QUE HAGO</button>
-            </p>
-            <!-- aca va una imagen -->
-        </div>
-        <div class="contenedor-mis-conocimientos">
+            </div> 
+            <!-- ACA VA UNA IMAGEN -->
+        </section>
+        <section id="contenedor-mis-conocimientos">
             <h2>
                 Mis conocimientos
             </h2>
             <p>
                 pequeña intro sobre lo que sé
             </p>
-            <div class="card-html box"></div>
-            <div class="card-css box"></div>
-            <div class="card-sass box"></div>
-            <div class="card-java box"></div>
-            <div class="card-react box"></div>
-            <div class="card-git box"></div>
-        </div>
-        <div class="contenedor-cita">
+            <div class="card-habilidades">
+                <i class="fa-brands fa-html5 card-icon" style="color: #e54d26;"></i>
+                <span>HTML 5</span>
+            </div>
+            <div>
+                <i class="fa-brands fa-css3-alt card-icon" style="color: #3d8fc6;"></i>
+                <span>CSS 3</span>
+            </div>
+            <div>
+                <i class="fa-brands fa-sass card-icon" style="color: #cc6699;"></i>
+                <span>Sass</span>
+            </div>
+            <div>
+                <i class="fa-brands fa-js card-icon" style="color: #f0db4f;"></i>
+                <span>JavaScript</span>
+            </div>
+            <div>
+                <i class="fa-brands fa-react card-icon" style="color: #61dafb;"></i>
+                <span>React</span>
+            </div>
+            <div>
+                <i class="fa-brands fa-git-alt card-icon" style="color: #f34f29;"></i>
+                <span>GIT</span>
+            </div>
+        </section>
+        <section id="contenedor-cita">
+            <i class="fa-solid fa-quote-right" style="color: #b1bdd3;"></i>
             <p>
-                No importa quién eres, de dónde eres, tu color de piel o tu identidad de género. Simplemente, habla por ti mismo. Encuentra tu nombre y encuentra esa voz para poder hablar por ti.
-                <span>Kim Namjoon, RM of BTS</span>
+                aca va una cita
             </p>
-        </div>
-        <div class="contenedor-mis-proyectos">
-            <h2>Mis proyectos</h2>
+            <span>autor</span> 
+        </section>
+        <section id="contenedor-mis-proyectos">
+            <h2>
+                Mis proyectos
+            </h2>
             <p>
-                pequeña introduccion
+                breve descripcion del contenido
             </p>
-            <div class="card-portfolio card"></div>
-            <div class="card-generador-de-memes card"></div>
-            <div class="match-3 card"></div>
-            <div class="controlador-de-gastos card"></div>
-            <div class="administrador-de-reuniones card"></div>
-            <div class="todo-app card"></div>
-            <div class="buscador-de-peliculas card"></div>
-        </div>
-        <div class="contenedor-contactame-y-form">
-            <h2>Contactame</h2>
-            <p>pequeña intro a datos de contacto</p>
-            <ul>
-                <li><a href="Mail"></a></li>
-                <li><a href="Instagram"></a></li>
-                <li><a href="linkedin"></a></li>
-            </ul>
-            <h2>Escribime</h2>
-                <!-- aca iria un form -->
-        </div>
+            <div class="card-proyectos">
+                <!-- aca va una imagen -->
+                <span>Portfolio</span>
+            </div>
+            <div class="card-proyectos">
+                <!-- aca va una imagen -->
+                <span>Generador de memes</span>
+            </div>
+            <div class="card-proyectos">
+                <!-- aca va una imagen -->
+                <span>Match 3</span>
+            </div>
+            <div class="card-proyectos">
+                <!-- aca va una imagen -->
+                <span>Controlador de gastos</span>
+            </div>
+            <div class="card-proyectos">
+                <!-- aca va una imagen -->
+                <span>Administrador de reuniones</span>
+            </div>
+            <div class="card-proyectos">
+                <!-- aca va una imagen -->
+                <span>Todo app</span>
+            </div>
+            <div class="card-proyectos">
+                <!-- aca va una imagen -->
+                <span>Buscador de películas</span>
+            </div>
+        </section>
+        <section id="contenedor-contacto">
+            <h2>
+                Contactame
+            </h2>
+            <p>
+                breves palabras
+            </p>
+            <a href="https://github.com/DiazBarbozaBrenda"><i class="fa-brands fa-github-alt" style="color: #c8d6ee;"></i>DiazBarbozaBrenda</a>
+            <a href="https://www.linkedin.com/in/brendamarieldiazbarboza/"><i class="fa-brands fa-linkedin" style="color: #5a7fbf;"></i>BrendaMarielDiazBarboza</a>
+            <a href="mailto:diazbarbozabrenda@gmail.com"><i class="fa-solid fa-envelope" style="color: #2959ae;"></i>diazbarbozabrenda@gmail.com</a>
+            <h2>
+                Escribime
+            </h2>
+            <!-- aca va un form -->
+        </section>
     </main>
     <footer>
         <ul>
-            <li><a href="HOLA">HOLA</a></li>
-            <li><a href="CONOCIMIENTOS">CONOCIMIENTOS</a></li>
-            <li><a href="PROYECTOS">PROYECTOS</a></li>
-            <li><a href="CONTACTO">CONTACTO</a></li>
+            <li><a href="">HOLA</a></li>
+            <li><a href="">CONOCIMIENTOS</a></li>
+            <li><a href="">PROYECTOS</a></li>
+            <li><a href="">CONTACTO</a></li>
         </ul>
-        <!-- ACA IRIAN LOS LOGOS QUE LLEVEN A LOS LINKS DE CONTACTO -->
-        <span>Hecho con ♥ por Brenda Díaz Barboza</span>
+        <a href="https://github.com/DiazBarbozaBrenda"><i class="fa-brands fa-github-alt" style="color: #c8d6ee;"></i></a>
+        <a href="https://www.linkedin.com/in/brendamarieldiazbarboza/"><i class="fa-brands fa-linkedin" style="color: #5a7fbf;"></i></a>
+        <a href="mailto:diazbarbozabrenda@gmail.com"><i class="fa-solid fa-envelope" style="color: #2959ae;"></i></a>
+        <p>
+            Hecho con ❤️ por Brenda Díaz Barboza
+        </p>
     </footer>
 </body>
 </html>
