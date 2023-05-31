@@ -7,18 +7,21 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/cf41634d4e.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="img" href="./assets/favicon corazon.png">
     <title>Brenda Díaz Barboza</title>
 </head>
 <body>
     <header>
+        <label for="menu-hamburguesa" class="menu-hamburguesa"><i class="fa-solid fa-bars"></i></label>
+        <input type="checkbox" name="menu-hamburguesa" id="menu-hamburguesa">
         <nav>
             <ul>
-                <li><a href="">HOLA</a></li>
-                <li><a href="">CONOCIMIENTOS</a></li>
-                <li><a href="">PROYECTOS</a></li>
-                <li><a href="">CONTACTO</a></li>
+                <li><a class="nav-bar-list" href="#contenedor-presentacion">HOLA</a></li>
+                <li><a class="nav-bar-list" href="#contenedor-mis-conocimientos">CONOCIMIENTOS</a></li>
+                <li><a class="nav-bar-list" href="#contenedor-mis-proyectos">PROYECTOS</a></li>
+                <li><a class="nav-bar-list checked-nav" href="#contenedor-contacto">CONTACTO</a></li>
             </ul>
         </nav>
     </header>
@@ -28,117 +31,153 @@
                 <span>
                     ¡Hola! Soy
                 </span>
-                <h2 class="mi-nombre">
+                <h2>
                     Brenda Díaz Barboza
                 </h2>
                 <p>
-                    Estudiante, coleccionista de cartones y fanática de BTS
+                    Estudiante, coleccionista y fanática de BTS
                 </p>
-                <button>LO QUE HAGO</button>
+                <a href="#contenedor-mis-proyectos">LO QUE HAGO</a>
             </div> 
-            <!-- ACA VA UNA IMAGEN -->
+            <img class="imagen-presentacion" src="/assets/undraw_programmer_re_owql.svg" alt="dibujo de una mujer programando">
         </section>
         <section id="contenedor-mis-conocimientos">
-            <h2>
+            <h2 class="titulo-mis-conocimientos">
                 Mis conocimientos
             </h2>
-            <p>
-                pequeña intro sobre lo que sé
+            <p class="descripcion-mis-conocimientos">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem illum libero sit quibusdam totam iure eligendi expedita dolor ducimus nostrum.
             </p>
-            <div class="card-habilidades">
-                <i class="fa-brands fa-html5 card-icon" style="color: #e54d26;"></i>
-                <span>HTML 5</span>
-            </div>
-            <div>
-                <i class="fa-brands fa-css3-alt card-icon" style="color: #3d8fc6;"></i>
-                <span>CSS 3</span>
-            </div>
-            <div>
-                <i class="fa-brands fa-sass card-icon" style="color: #cc6699;"></i>
-                <span>Sass</span>
-            </div>
-            <div>
-                <i class="fa-brands fa-js card-icon" style="color: #f0db4f;"></i>
-                <span>JavaScript</span>
-            </div>
-            <div>
-                <i class="fa-brands fa-react card-icon" style="color: #61dafb;"></i>
-                <span>React</span>
-            </div>
-            <div>
-                <i class="fa-brands fa-git-alt card-icon" style="color: #f34f29;"></i>
-                <span>GIT</span>
+            <div class="contenedor-de-cards-habilidades">
+                <div class="card-habilidades">
+                    <i class="fa-brands fa-html5 card-icon" style="color: #e54d26;"></i>
+                    <p>HTML 5</p>
+                </div>
+                <div class="card-habilidades">
+                    <i class="fa-brands fa-css3-alt card-icon" style="color: #3d8fc6;"></i>
+                    <p>CSS 3</p>
+                </div>
+                <div class="card-habilidades">
+                    <i class="fa-brands fa-sass card-icon" style="color: #cc6699;"></i>
+                    <p>Sass</p>
+                </div>
+                <div class="card-habilidades">
+                    <i class="fa-brands fa-js card-icon" style="color: #f0db4f;"></i>
+                    <p>JavaScript</p>
+                </div>
+                <div class="card-habilidades">
+                    <i class="fa-brands fa-react card-icon" style="color: #61dafb;"></i>
+                    <p>React</p>
+                </div>
+                <div class="card-habilidades">
+                    <i class="fa-brands fa-git-alt card-icon" style="color: #f34f29;"></i>
+                    <p>GIT</p>
+                </div>
             </div>
         </section>
         <section id="contenedor-cita">
-            <i class="fa-solid fa-quote-right" style="color: #b1bdd3;"></i>
-            <p>
-                aca va una cita
+            <i class="fa-solid fa-quote-right";></i>
+            <p class="cita">
+                Aprendí que no se puede dar marcha atrás, que la esencia de la vida es ir hacia delante. En realidad, la vida es una calle de sentido único.
             </p>
-            <span>autor</span> 
+            <p class="autor-de-cita">Agatha Christie</p> 
         </section>
         <section id="contenedor-mis-proyectos">
-            <h2>
+            <h2 class="titulo-mis-proyectos">
                 Mis proyectos
             </h2>
-            <p>
-                breve descripcion del contenido
+            <p class="descripcion-mis-proyectos">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum cupiditate quam iusto fuga beatae nulla vel ullam quo veritatis. Vero.
             </p>
-            <div class="card-proyectos">
-                <!-- aca va una imagen -->
-                <span>Portfolio</span>
-            </div>
-            <div class="card-proyectos">
-                <!-- aca va una imagen -->
-                <span>Generador de memes</span>
-            </div>
-            <div class="card-proyectos">
-                <!-- aca va una imagen -->
-                <span>Match 3</span>
-            </div>
-            <div class="card-proyectos">
-                <!-- aca va una imagen -->
-                <span>Controlador de gastos</span>
-            </div>
-            <div class="card-proyectos">
-                <!-- aca va una imagen -->
-                <span>Administrador de reuniones</span>
-            </div>
-            <div class="card-proyectos">
-                <!-- aca va una imagen -->
-                <span>Todo app</span>
-            </div>
-            <div class="card-proyectos">
-                <!-- aca va una imagen -->
-                <span>Buscador de películas</span>
+            <div class="contenedor-de-cards-proyectos">
+                <div class="card-proyectos">
+                    <img src="./assets/img portfolio.png" alt="miniatura del proyecto">
+                    <p>Portfolio</p>
+                </div>
+                <div class="card-proyectos">
+                    <img src="./assets/generador de memes.png" alt="miniatura del proyecto">
+                    <p>Generador de memes</p>
+                </div>
+                <div class="card-proyectos">
+                    <img src="./assets/match 3.png" alt="miniatura del proyecto">
+                    <p>Match 3</p>
+                </div>
+                <div class="card-proyectos">
+                    <img src="./assets/controlador de gastos.png" alt="miniatura del proyecto">
+                    <p>Controlador de gastos</p>
+                </div>
+                <div class="card-proyectos">
+                    <img src="./assets/administrador de gastos.png" alt="miniatura del proyecto">
+                    <p>Administrador de reuniones</p>
+                </div>
+                <div class="card-proyectos">
+                    <img src="./assets/todo app.png" alt="miniatura del proyecto">
+                    <p>Todo app</p>
+                </div>
+                <div class="card-proyectos">
+                    <img src="./assets/buscador de peliculas.png" alt="miniatura del proyecto">
+                    <p>Buscador de películas</p>
+                </div>
             </div>
         </section>
         <section id="contenedor-contacto">
-            <h2>
-                Contactame
-            </h2>
-            <p>
-                breves palabras
-            </p>
-            <a href="https://github.com/DiazBarbozaBrenda"><i class="fa-brands fa-github-alt" style="color: #c8d6ee;"></i>DiazBarbozaBrenda</a>
-            <a href="https://www.linkedin.com/in/brendamarieldiazbarboza/"><i class="fa-brands fa-linkedin" style="color: #5a7fbf;"></i>BrendaMarielDiazBarboza</a>
-            <a href="mailto:diazbarbozabrenda@gmail.com"><i class="fa-solid fa-envelope" style="color: #2959ae;"></i>diazbarbozabrenda@gmail.com</a>
-            <h2>
-                Escribime
-            </h2>
-            <!-- aca va un form -->
+            <div class="contenedor-contacto-form">
+                <div class="contenedor-contactame">
+                <h2>
+                    Contactame
+                </h2>
+                <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia excepturi, eius et inventore quos incidunt hic labore itaque asperiores deserunt.
+                </p>
+                <a href="https://twitter.com/Brenmdb"><i class="fa-brands fa-twitter"></i>@Brenmdb</a>
+                <a href="https://github.com/DiazBarbozaBrenda"><i class="fa-brands fa-github-alt";></i>DiazBarbozaBrenda</a>
+                <a href="https://www.linkedin.com/in/brendamarieldiazbarboza/"><i class="fa-brands fa-linkedin";></i>BrendaMarielDiazBarboza</a>
+                <a href="mailto:diazbarbozabrenda@gmail.com"><i class="fa-solid fa-envelope";></i>diazbarbozabrenda@gmail.com</a>
+                </div>
+                <div class="contenedor-escribime">
+                    <h2>
+                        Escribime
+                    </h2>
+                    <form id="form-contacto" >
+                        <div class="input-nombre-apellido">
+                            <div class="input-form">
+                                <label for="input-name">Nombre *</label>
+                                <input type="text" id="input-name" class="estilo-input" placeholder="Ej: Brenda" aria-label="Nombre" required>
+                            </div>
+                            <div class="input-form">
+                                <label for="input-last-name">Apellidos *</label>
+                                <input type="text" id="input-last-name" class="estilo-input" placeholder="Ej: Díaz Barboza" aria-label="Apellidos" required>
+                            </div>
+                        </div>
+                        <div class="input-form">
+                            <label for="input-email">Email *</label>
+                            <input type="email" id="input-email" class="estilo-input mail" placeholder="Ej: diazbarbozabrenda@gmail.com" aria-label="Email" required>
+                        </div>
+                        <div class="input-form">
+                            <label for="mensaje">Mensaje *</label>
+                            <textarea id="mensaje" class="estilo-input mensaje" placeholder="Escriba un mensaje aquí" maxlength="100" aria-label="Mensaje" required ></textarea>
+                        </div>
+                        <button type="submit" class="boton-form-enviar">
+                            Enviar
+                        </button>
+                    </form>
+                </div>
+            </div>
         </section>
     </main>
     <footer>
-        <ul>
-            <li><a href="">HOLA</a></li>
-            <li><a href="">CONOCIMIENTOS</a></li>
-            <li><a href="">PROYECTOS</a></li>
-            <li><a href="">CONTACTO</a></li>
+        <ul class="lista-footer">
+            <li><a href="#contenedor-presentacion">HOLA</a></li>
+            <li><a href="#contenedor-mis-conocimientos">CONOCIMIENTOS</a></li>
+            <li><a href="#contenedor-mis-proyectos">PROYECTOS</a></li>
+            <li><a href="#contenedor-contacto">CONTACTO</a></li>
         </ul>
-        <a href="https://github.com/DiazBarbozaBrenda"><i class="fa-brands fa-github-alt" style="color: #c8d6ee;"></i></a>
-        <a href="https://www.linkedin.com/in/brendamarieldiazbarboza/"><i class="fa-brands fa-linkedin" style="color: #5a7fbf;"></i></a>
-        <a href="mailto:diazbarbozabrenda@gmail.com"><i class="fa-solid fa-envelope" style="color: #2959ae;"></i></a>
+        <div class="footer-iconos">
+            <a href="https://twitter.com/Brenmdb"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://github.com/DiazBarbozaBrenda"><i class="fa-brands fa-github-alt";></i></a>
+            <a href="https://www.linkedin.com/in/brendamarieldiazbarboza/"><i class="fa-brands fa-linkedin";></i></a>
+            <a href="mailto:diazbarbozabrenda@gmail.com"><i class="fa-solid fa-envelope";></i></a>
+        </div>
         <p>
             Hecho con ❤️ por Brenda Díaz Barboza
         </p>
