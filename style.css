@@ -21,7 +21,7 @@ header {
     height: 85px;
     display: flex;
     justify-content: flex-end;
-    background-color: #c77dff;
+    background-color: #b8b8ff;
     align-items: center;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
         rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
@@ -202,8 +202,8 @@ ul {
 }
 
 .card-habilidades:hover {
-    border-color: #c77dff;
-    color: #c77dff;
+    border-color: #b8b8ff;
+    color: #b8b8ff;
 }
 
 /* fin del contenedor mis habilidades */
@@ -300,8 +300,8 @@ ul {
 }
 
 .card-proyectos:hover {
-    border-color: #c77dff;
-    color: #c77dff;
+    border-color: #b8b8ff;
+    color: #b8b8ff;
 }
 
 /* fin del contenedor mis proyectos */
@@ -353,17 +353,17 @@ ul {
 }
 
 .contenedor-contactame a:hover {
-    color: #c77dff;
+    color: #b8b8ff;
 }
 
 .contenedor-contactame i {
-    color: #c77dff;
+    color: #b8b8ff;
     font-size: 20px;
     padding: 8px;
 }
 
 .contenedor-contactame i:hover {
-    background-color: #c77dff;
+    background-color: #b8b8ff;
     border-radius: 50%;
     color: white;
 }
@@ -417,7 +417,7 @@ ul {
 
 .estilo-input:focus {
     outline: none;
-    box-shadow: 0 0 15px 1px #c77dff;
+    box-shadow: 0 0 15px 1px #b8b8ff;
 }
 
 .mail {
@@ -476,6 +476,12 @@ footer {
     text-decoration: none;
     color: white;
     font-size: 14px;
+    padding: 5px;
+}
+
+.lista-footer a:active {
+    border-radius: 20px;
+    box-shadow: 0 0 15px 1px #f8edeb;
 }
 
 footer i {
@@ -535,7 +541,7 @@ footer i:hover {
         position: fixed;
         left: 0;
         top:80px;
-        background: #c77dff;
+        background: #b8b8ff;
         padding:25px 15px;
         border-radius: 0 0 32px 0;
     }
@@ -584,6 +590,7 @@ footer i:hover {
     .card-proyectos{
         width: 280px;
         height: 296px;
+        text-align: center;
     }
     .card-proyectos img{
         width: 230px;
@@ -598,14 +605,29 @@ footer i:hover {
     .contenedor-contactame a {
         font-size: 14px;
     }
+    .lista-footer {
+        display: none;
+    }
 }
 
 @media (width < 490px) {
+    .titulo-mis-conocimientos {
+        font-size: 25px;
+    }
+    .descripcion-mis-conocimientos {
+        font-size: 13px;
+    }
     #contenedor-cita {
         padding: 30px;
     }
     #contenedor-mis-proyectos{
         padding: 50px 15px;
+    }
+    .titulo-mis-proyectos {
+        font-size: 25px;
+    }
+    .descripcion-mis-proyectos {
+        font-size: 13px;
     }
     #contenedor-contacto {
         padding: 0;
@@ -615,10 +637,13 @@ footer i:hover {
         border: none;
         padding: 10px 15px;
     }
-    .lista-footer {
-        display: none;
-    }
     footer {
         text-align: center;
+    }
+}
+
+@media (width < 400px) {
+    .titulo-mis-conocimientos {
+        font-size: 22px;
     }
 }
