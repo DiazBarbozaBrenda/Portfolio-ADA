@@ -181,7 +181,6 @@ ul {
 
 .card-habilidades {
     width: 260px;
-    height: 230px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -190,6 +189,7 @@ ul {
     gap: 20px;
     background-color: white;
     border-radius: 8px;
+    padding: 50px 0;
 }
 
 .card-icon {
@@ -277,26 +277,25 @@ ul {
 }
 .card-proyectos {
     width: 340px;
-    height: 360px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     border: 1px solid #dfe1e7;
-    gap: 30px;
     background-color: white;
     border-radius: 8px;
     cursor: pointer;
+    padding: 50px 0;
+    gap: 20px;
 }
 
 .card-proyectos img {
     width: 280px;
-    height: 190px;
 }
 
 .card-proyectos p {
     font-size: 20px;
-    font-weight: bolder;
+    font-weight: 600;
 }
 
 .card-proyectos:hover {
@@ -410,8 +409,7 @@ ul {
     border-radius: 20px;
     border: none;
     width: 200px;
-    height: 40px;
-    padding: 10px;
+    padding: 15px;
     font-size: 15px;
 }
 
@@ -545,6 +543,14 @@ footer i:hover {
         padding:25px 15px;
         border-radius: 0 0 32px 0;
     }
+    .checked-nav {
+        color: black;
+        background-color: transparent;
+    }
+    .checked-nav:hover {
+        color: #f8edeb;
+        background-color: transparent;
+    }
     .presentacion-info span {
         font-size: 25px;
     }
@@ -589,12 +595,10 @@ footer i:hover {
     }
     .card-proyectos{
         width: 280px;
-        height: 296px;
         text-align: center;
     }
     .card-proyectos img{
         width: 230px;
-        height: 156px;
     }
     .contenedor-contacto-form h2 {
         font-size: 35px;
@@ -612,7 +616,8 @@ footer i:hover {
 
 @media (width < 490px) {
     .titulo-mis-conocimientos {
-        font-size: 25px;
+        font-size: 26px;
+        text-align: center;
     }
     .descripcion-mis-conocimientos {
         font-size: 13px;
@@ -642,8 +647,3 @@ footer i:hover {
     }
 }
 
-@media (width < 400px) {
-    .titulo-mis-conocimientos {
-        font-size: 23px;
-    }
-}
