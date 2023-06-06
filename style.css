@@ -290,7 +290,7 @@ ul {
 }
 
 .card-proyectos img {
-    width: 280px;
+    width: 250px;
 }
 
 .card-proyectos p {
@@ -390,6 +390,7 @@ ul {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    padding: 10px;
 }
 
 .input-nombre-apellido {
@@ -411,11 +412,27 @@ ul {
     width: 200px;
     padding: 15px;
     font-size: 15px;
+    border: 1px solid #f6f7fb;
 }
 
 .estilo-input:focus {
     outline: none;
-    box-shadow: 0 0 15px 1px #b8b8ff;
+    border-color: #b8b8ff;
+    box-shadow: 0 0 10px #b8b8ff;
+}
+
+.estilo-input:valid {
+    border-color: #6be640;
+    box-shadow: 0 0 10px #6be640;
+}
+
+.estilo-input:invalid:not(:placeholder-shown) {
+    border-color: #ee6d52;
+    box-shadow: 0 0 10px #ee6d52;
+}
+
+.icono-invalido {
+    color: #ee6d52;
 }
 
 .mail {
