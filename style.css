@@ -577,6 +577,12 @@ footer i:hover {
     .imagen-presentacion {
         width: 300px;
     }
+    .contenedor-escribime{
+        width: 80%;
+    }
+    .estilo-input{
+        width: 100%;
+    }
     .input-nombre-apellido {
         flex-direction: column;
     }
